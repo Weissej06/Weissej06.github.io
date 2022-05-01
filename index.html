@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--"src=" is showing that the script is in the "login.js" file -->
+    
+    <script src="login.js"></script>
+
+    <!--This links my css file to this html by showing it as a reference "href", relationship "stylesheet", and type "text/css"-->
+<link href="login.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+<body>
+<!--The center tags move everything within them to a certerpoint. In my case the first center tag aligns everything to middle of the screen. The tags following it somewhat aligns the text and inputs-->
+<!--The input automatically makes a text box on the website to be used for whatever purposes needed, also the "return false" is used so that if when submitted it is false the user should stay on the same page until everything is authenticated properly-->
+ <center> 
+  <div class="container"> 
+  <center>  <h1 style="color: rgb(255, 255, 255)">  Welcome Employee! Please login</h1>   
+
+     <!-- The id is used in getElementbyId to allow the js code to connect and allow the functions to act onclick. No ID no place for the function to latch onto and work-->
+
+     <!--the label is used for the div. The div class goes into the css for better customization, button and input alignment, etc-->
+<form style="color: rgb(255, 255, 255)" id="AuthorizeUser" onsubmit="return false">
+ 
+ <label> Employee Name <input type="text" id="EmployeeName" class="name" >   </label> <br>
+ <br>
+ <label>  Badge Number  <input type="number" id="BadgeNumber" class="Badge">  </label> <br>
+  <br>
+  <label> <input type="submit" value="Authorize" onclick="authorize();"class="submit">   </label>
+
+</form>
+</center> 
+</div>
+</center>
+<!--The type like "submit" and "text" shows what kind of things will be input so for submit that makes a submit button and for text that makes an text box-->
+</body> 
+ <br>
+ <br>
+ <br>
+<footer style="color: rgb(255, 255, 255)">
+ Presented By Eissej Wilson
+</footer>
+</html>
