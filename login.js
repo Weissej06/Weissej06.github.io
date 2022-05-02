@@ -15,7 +15,7 @@ else if (BadgeNumber > 1000 || BadgeNumber < 100 ) {
         
 else {
 alert("Employee Authorized!")
-location.replace("The Countdown Assignment (1) (1).html")
+window.open("The Countdown Assignment (1) (1).html");
 }
 //The code states that if the employee name length is more than 20 charcters or less than 1  the user cannot be authorized
 // The code states that if the badge number is more than 1000 or less than 100 the badge number is  unable to be authorized
